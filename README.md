@@ -1,0 +1,15 @@
+### CLI
+- `node -p process.versions.v8`
+- `node -p process.arch`
+- `node -p os.cpus()`
+- `node --harmony -p "'Node'.padEnd(8, '*')"`
+- `node --v8-options | grep "in progress"`
+- `node --v8-options | grep "gc"`
+- `node --trace_gc <js file>`
+- `node --expose-gc -i "gc()"`
+- `node --v8-options | less`
+- `node --harmony_trailing_commas -p "function tc(a,b,) {}"`
+- `node --use_strict <js file>`
+- `node -p "process.argv.slice(1)" test 42`
+- `NODE_NO_READLINE=1 rlwrap node`
+- REPL `.help`

@@ -1,0 +1,22 @@
+{
+  "name": "advanced-nodejs",
+  "version": "1.0.0",
+  "description": "- `node -p process.versions.v8`\r - `node --harmony -p \"'Node'.padEnd(8, '*')\"`\r - `node --v8-options | grep \"in progress\"`\r - `node --v8-options | grep \"gc\"`\r - `node --trace_gc <js file>`\r - `node --expose-gc -i \"gc()\"`\r - `node --v8-options | less`\r - `node --harmony_trailing_commas -p \"function tc(a,b,) {}\"`\r - `node --use_strict <js file>`\r - `NODE_NO_READLINE=1 rlwrap node`\r - REPL `.help`",
+  "main": "repl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonykung06/advanced-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonykung06/advanced-nodejs/issues"
+  },
+  "homepage": "https://github.com/tonykung06/advanced-nodejs#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
