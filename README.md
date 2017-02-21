@@ -1,6 +1,9 @@
 ### CLI
 - `node -p process.versions.v8`
+- `node -p process.versions`
+- `node -p process.env`
 - `node -p process.arch`
+- `node -p process.release.lts`
 - `node -p os.cpus()`
 - `node --harmony -p "'Node'.padEnd(8, '*')"`
 - `node --v8-options | grep "in progress"`
