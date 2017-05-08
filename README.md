@@ -16,3 +16,7 @@
 - `node -p "process.argv.slice(1)" test 42`
 - `NODE_NO_READLINE=1 rlwrap node`
 - REPL `.help`
+- `require.resolve('moduleA')` will resolve the path to the module file but don't load the module
+- `require.extensions['.js'].toString()`, `require.extensions['.json'].toString()`, `require.extensions['.node'].toString()`
+- Before compilinig a module, Node wraps the module code in a function, `require('module').wrapper`, `console.log(arguments)`
+- modules are cached after first load, `console.log(require.cache)`, `delete require.cache[<full path to module>]` will clear the module cache and next require() of that module will re-evaluate the module code
