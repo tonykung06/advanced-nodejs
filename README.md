@@ -20,3 +20,7 @@
 - `require.extensions['.js'].toString()`, `require.extensions['.json'].toString()`, `require.extensions['.node'].toString()`
 - Before compilinig a module, Node wraps the module code in a function, `require('module').wrapper`, `console.log(arguments)`
 - modules are cached after first load, `console.log(require.cache)`, `delete require.cache[<full path to module>]` will clear the module cache and next require() of that module will re-evaluate the module code
+- To generate cert, private key, CSR, and self-signed cert in one go, `openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -nodes`
+- `url.parse('https://user:pass@hk.yahoo.com/path/a?myq=testing#testing', true)`
+- `url.format({protocol: 'https', host: 'hk.yahoo.com', search: '?q=testing', pathname: '/search'})`
+- `querystring.parse(querystring.stringify({q: 'testing', q2: 'hello'}))`
