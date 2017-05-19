@@ -24,3 +24,14 @@
 - `url.parse('https://user:pass@hk.yahoo.com/path/a?myq=testing#testing', true)`
 - `url.format({protocol: 'https', host: 'hk.yahoo.com', search: '?q=testing', pathname: '/search'})`
 - `querystring.parse(querystring.stringify({q: 'testing', q2: 'hello'}))`
+- `require('os').cpus()`
+- `require('os').networkInterfaces()`
+- `require('os').freemem()`
+- `require('os').type()`
+- `require('os').release()`
+- `require('os').userInfo()`
+- `require('os').constants`
+- `util.inspect(module, {depth: 0})`, to print string representation of an object
+- `console.assert(3 == '3')`
+- `console.trace('hi')`
+- `util.debuglog('oh')`, write debug msg to stderr based on existence of NODE_DEBUG env variable
