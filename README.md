@@ -35,3 +35,5 @@
 - `console.assert(3 == '3')`
 - `console.trace('hi')`
 - `util.debuglog('oh')`, write debug msg to stderr based on existence of NODE_DEBUG env variable
+- `node debug <file path>`, `help`, `cont`, `sb(<line number)`, `restart`, `watch('<variable name>')`, `repl`, `<CTRL + L>`, `list(5)`
+- `node --inspect --debug-brk <file path>`
